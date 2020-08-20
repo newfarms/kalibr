@@ -57,10 +57,10 @@ nullProcessor = acv.NCameraPipeline( sm.PropertyTree(config,'NullPipeline') )
 undistortingProcessor = acv.NCameraPipeline( sm.PropertyTree( config, 'UndistortingPipeline') )
 
 # load some sample images
-left  = cv2.imread('im_left.jpg',  cv2.CV_LOAD_IMAGE_GRAYSCALE)
-front = cv2.imread('im_front.jpg', cv2.CV_LOAD_IMAGE_GRAYSCALE)
-right = cv2.imread('im_right.jpg', cv2.CV_LOAD_IMAGE_GRAYSCALE)
-rear  = cv2.imread('im_rear.jpg',  cv2.CV_LOAD_IMAGE_GRAYSCALE)
+left  = cv2.imread('im_left.jpg',  cv2.cv::IMREAD_GRAYSCALE)
+front = cv2.imread('im_front.jpg', cv2.cv::IMREAD_GRAYSCALE)
+right = cv2.imread('im_right.jpg', cv2.cv::IMREAD_GRAYSCALE)
+rear  = cv2.imread('im_rear.jpg',  cv2.cv::IMREAD_GRAYSCALE)
 
 IM = [front,left,rear,right]
 
